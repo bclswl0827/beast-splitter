@@ -1,18 +1,3 @@
-# Configuration for beast-splitter.
-# This is a shell-script fragment.
-# Lines beginning with "#" are ignored.
-
-# Set to "yes" to allow starting beast-splitter with this configuration.
-ENABLED="yes"
-
-# Input options for beast-splitter.
-# This tells beast-splitter where to read data from.
-# You should provide one of --net or --serial here
+ENABLED="no"
 INPUT_OPTIONS="--serial /dev/beast --fixed-baud 1000000"
-#INPUT_OPTIONS="--net remotehost:remoteport"
-
-# Output options for beast-splitter.
-# This tells beast-splitter where to send output to,
-# either by establishing an outgoing connection (--connect)
-# or by accepting inbound connections (--listen)
 OUTPUT_OPTIONS="--listen 30005:R --connect localhost:30104:R"
